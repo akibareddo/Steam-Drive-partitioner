@@ -14,7 +14,8 @@ read label
 echo "The size of the location where you are installing your games needs a size. Please enter the size of the location in MiB. If unsure, just enter 'x' for a default value of 100 gigabytes (100,000 MiB).\n"
 
 read size
-x = 103017
+if $size="x"
+	size=103017	
 
 echo "We are now creating the place where you will install your games. This may take a bit.\n"
 
